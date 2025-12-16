@@ -33,7 +33,6 @@ int main(int argc, char *argv[]) {
 		unlink(FIFO2);
 
 		printf("server: done\n");
-		fflush(stdout);
 	}
 	else if (strcmp(argv[1], "worker") == 0) {
 		int read_fd = open(FIFO1, O_RDONLY);
